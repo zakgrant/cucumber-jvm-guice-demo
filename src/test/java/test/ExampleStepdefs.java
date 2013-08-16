@@ -11,14 +11,13 @@ import static org.junit.Assert.assertThat;
 
 public class ExampleStepdefs {
 
-	private SharedContext sharedContext;
+    private SharedContext sharedContext;
     private Greeter greeter;
-    private String message;
 
     @Inject
-	public ExampleStepdefs(SharedContext sharedContext) {
-		this.sharedContext = sharedContext;
-	}
+    public ExampleStepdefs(SharedContext sharedContext) {
+        this.sharedContext = sharedContext;
+    }
 
     @Given("^I have a greeter$")
     public void I_have_a_greeter() throws Throwable {

@@ -6,14 +6,14 @@ import org.zak.Greeter;
 
 public class AnotherExampleStepdefs {
 
-	private SharedContext sharedContext;
+    private SharedContext sharedContext;
     private Greeter greeter;
 
     @Inject
-	public AnotherExampleStepdefs(SharedContext sharedContext) {
-		this.sharedContext = sharedContext;
+    public AnotherExampleStepdefs(SharedContext sharedContext) {
+        this.sharedContext = sharedContext;
         this.greeter = sharedContext.getGreeter();
-	}
+    }
 
     @When("^the greeter greets to \"([^\"]*)\"$")
     public void the_greeter_greets(String greetee) throws Throwable {
